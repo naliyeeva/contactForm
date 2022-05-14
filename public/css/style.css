@@ -1,0 +1,123 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;500&display=swap");
+
+.container {
+  background-color: white;
+  opacity: 0.8;
+  margin: auto;
+  width: 40%;
+  height: 500px;
+}
+
+body {
+  background-image: url("../images/pic.jpg");
+  margin: 0;
+}
+
+.cover-img {
+  position: relative;
+  background-size: cover;
+  background-color: rgba(0, 48, 107, 0.7);
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  padding: 5px;
+  justify-content: center;
+  align-items: center;
+}
+
+.form-fields input,
+select {
+  border-radius: 5px;
+  border: groove 2px;
+  font-family: "Roboto", sans-serif;
+  font-size: 14px;
+  margin: 10px 0px;
+  padding: 10px;
+  width: 90%;
+  justify-content: center;
+  align-items: center;
+  -moz-box-sizing: border-box; /*for calc height and width*/
+  -webkit-box-sizing: border-box; /*for calc height and width*/
+  box-sizing: border-box; /*for calc height and width*/
+}
+
+.buttons {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+
+::placeholder {
+  font-family: "Roboto", sans-serif;
+}
+
+button {
+  cursor: pointer;
+}
+
+.switch-button {
+  border-radius: 3px;
+  border: groove 2px;
+  background-color: white;
+  width: 60px;
+  height: 35px;
+  border-color: #66b2ff;
+}
+
+.submit {
+  border-radius: 3px;
+  border: groove 2px;
+  width: 60px;
+  height: 35px;
+  color: white;
+  background-color: #1464f4;
+  display: none;
+  text-align: center;
+  padding: 5px;
+}
+
+i {
+  color: #1464f4;
+}
+
+.stages {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 0 35px;
+}
+
+.stage-item {
+  font-family: "Roboto";
+  font-size: 12px;
+}
+
+.form-stage {
+  display: none;
+}
+
+.form-stage.active {
+  display: block;
+  text-align: center;
+  width: 100%;
+}
+
+.number {
+  display: inline-block;
+  width: 15px;
+  height: 15px;
+  color: white;
+  background-color: gray;
+  text-align: center;
+  border-radius: 50%;
+  padding: 4px;
+}
+
+.stage-item.active .number {
+  background-color: #1464f4;
+}
