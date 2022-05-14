@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Task</title>
+        <link rel="stylesheet" type="text/css" href="css/style.css" />
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+        <script src="js/app.js" type="module"></script>
+    </head>
+    <body>
+        <div class="cover-img">
+            <div class="container">
+
+                <div class="stages">
+                    <div class="stage-item active" id="stage-1">
+                        <p id="first" class="page"><span class="number">1</span> <%= translations[language].first %> </p>
+                    </div>
+                    <div class="stage-item" id="stage-2">   
+                        <p id="second" class="page"><span class="number">2</span> <%= translations[language].second %></p>
+                    </div>
+                    <div class="stage-item" id="stage-3"> 
+                        <p id="third" class="page"><span class="number">3</span> <%= translations[language].third %></p>
+                    </div>
+                    <div class="stage-item" id="stage-4">
+                        <p id="fourth" class="page"><span class="number">4</span> <%= translations[language].fourth %></p>
+                    </div>
+                </div>   
+
+                <div class="form form-fields">
+                    <select id="language">
+                        <option value="az" <%= language == 'az' ? 'selected' : '' %>>Azərbaycan</option>
+                        <option value="en" <%= language == 'en' ? 'selected' : '' %>>English</option>
+                        <option value="ru" <%= language == 'ru' ? 'selected' : '' %>>Русский</option>
+                    </select>
+                
+                    <div id="form-stage-1" class="form-stage active">
+                        <input id="facebook-input" class="first-page" type="text" name="Facebook" placeholder="Facebook">
+                        
+                        <input id="instagram-input" class="first-page" type="text" name="Instagram" placeholder="Instagram">
+                        
+                        <input id="youtube-input" class="first-page" type="text" name="Youtube" placeholder="Youtube">
+                    </div>
+                    <div id="form-stage-2" class="form-stage">
+                        <input id="snapchat-input" class="second-page" type="text" name="Snapchat" placeholder="Snapchat">
+    
+                        <input id="tiktok-input" class="second-page" type="text" name="Tiktok" placeholder="Tiktok">
+    
+                        <input id="telegram-input" class="second-page" type="text" name="Telegram" placeholder="Telegram">
+                    </div>
+                    <div id="form-stage-3" class="form-stage">
+                        <input id="twitter-input" class="third-page" type="text" name="Twitter" placeholder="Twitter">
+
+                        <input id="pinterest-input" class="third-page" type="text" name="Pinterest" placeholder="Pinterest">
+    
+                        <input id="linkedin-input" class="third-page" type="text" name="LinkedIn" placeholder="LinkedIn">
+                    </div>
+                    <div id="form-stage-4" class="form-stage">
+                        <input id="name-input" class="fourth-page" type="text" name="Name" placeholder="Name">
+
+                        <input id="surname-input" class="fourth-page" type="text" name="Surname" placeholder="Surname">
+    
+                        <input id="age-input" class="fourth-page" type="text" name="Age" placeholder="Age">
+                    </div>
+                </div>
+
+
+                <div class="buttons">
+                    <button type="button" class="switch-button" id="previous">
+                    <i class="fa fa-arrow-left" class="arrows"></i></button>
+                    <button type="button" class="switch-button" id="next">
+                    <i class="fa fa-arrow-right" class="arrows"></i></button>
+                    <button type="submit" class="submit" id="submit">Submit</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
